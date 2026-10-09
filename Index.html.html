@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shagun Sharma | AI/ML Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap">
+<style>
+:root{--bg:#f6f3fa;--ink:#2a1740;--muted:#6b5a82;--teal:#14877a;--rose:#d9669a;--card:#ffffff;--line:#ddd3ea;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17102300;--bg:#181025;--ink:#f1eaf9;--muted:#b3a3c9;--teal:#4fd1c0;--rose:#f08ab8;--card:#241838;--line:#3a2b55}}
+:root[data-theme="dark"]{--bg:#181025;--ink:#f1eaf9;--muted:#b3a3c9;--teal:#4fd1c0;--rose:#f08ab8;--card:#241838;--line:#3a2b55}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.05;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+nav b{font-family:"Bricolage Grotesque",sans-serif;font-size:20px}
+nav a{margin-left:22px;text-decoration:none;color:var(--muted);font-weight:500}
+nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center;padding:56px 0 72px}
+.hero h1{font-size:clamp(44px,8vw,92px);font-weight:800;letter-spacing:-.03em}
+.hero p{max-width:34em;color:var(--muted);margin:22px 0 28px;font-size:19px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:500;text-decoration:none;border:1.5px solid var(--ink)}
+.btn.main{background:var(--ink);color:var(--bg)}
+.btn:hover{border-color:var(--teal)}
+#plot{width:100%;height:auto;border-radius:28px;background:var(--card);border:1px solid var(--line)}
+section{padding:64px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(30px,5vw,46px);font-weight:700;letter-spacing:-.02em;margin-bottom:28px}
+.feature{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:40px;display:grid;grid-template-columns:1fr 1.4fr;gap:36px}
+.feature h3{font-size:30px;font-weight:700}
+.meta{color:var(--muted);margin-top:10px}
+.feature ul{margin:0 0 18px;padding-left:20px}
+.feature li{margin-bottom:8px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.tags span{padding:6px 14px;border-radius:999px;background:var(--bg);border:1px solid var(--line);font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid div{border-left:4px solid var(--teal);padding:4px 0 4px 18px}
+.grid div:nth-child(2){border-color:var(--rose)}
+.grid h3{font-size:22px;margin-bottom:8px}
+.grid p{margin:0;color:var(--muted)}
+.contact p{max-width:32em;color:var(--muted);margin:0 0 24px}
+footer{padding:32px 0 48px;color:var(--muted);font-size:15px;border-top:1px solid var(--line)}
+@media (max-width:760px){.hero,.feature,.grid{grid-template-columns:1fr}.feature{padding:26px}nav a{margin-left:14px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><b>Shagun Sharma</b><div><a href="#internship">Internship</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<div>
+<h1>Shagun Sharma</h1>
+<p>AI/ML intern who has worked on PCOS detection at NIT Hamirpur. I turn health data into models that can help catch conditions earlier.</p>
+<div class="btns">
+<a class="btn main" href="#internship">See my internship work</a>
+<a class="btn" href="https://www.linkedin.com/in/shagun-sharma-8327a940b" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" href="https://github.com/shagun258" target="_blank" rel="noopener">GitHub</a>
+</div>
+</div>
+<svg id="plot" viewBox="0 0 400 400" role="img" aria-label="Scatter plot of patient data points separated into two groups by a classifier boundary"></svg>
+</header>
+
+<section id="internship">
+<h2>Internship</h2>
+<div class="feature">
+<div>
+<h3>PCOS detection with AI/ML</h3>
+<p class="meta">National Institute of Technology (NIT) Hamirpur</p>
+</div>
+<div>
+<ul>
+<li>Worked on a machine learning approach to identify polycystic ovary syndrome (PCOS) from patient data.</li>
+<li>Prepared and explored the dataset, then trained and compared models for classification.</li>
+<li>Evaluated results to see how reliably the models separate PCOS from non-PCOS cases.</li>
+</ul>
+<div class="tags"><span>Python</span><span>Machine learning</span><span>Classification</span><span>Healthcare data</span></div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<h2>What I work with</h2>
+<div class="grid">
+<div><h3>Machine learning</h3><p>Training, tuning and comparing classification models.</p></div>
+<div><h3>Data handling</h3><p>Cleaning, exploring and preparing real-world datasets.</p></div>
+<div><h3>Python</h3><p>Building experiments and analysis end to end.</p></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>Let's talk</h2>
+<p>I'm looking for internships in AI, machine learning and data. Message me on LinkedIn or browse my code on GitHub.</p>
+<div class="btns">
+<a class="btn main" href="https://www.linkedin.com/in/shagun-sharma-8327a940b" target="_blank" rel="noopener">Message on LinkedIn</a>
+<a class="btn" href="https://github.com/shagun258" target="_blank" rel="noopener">View GitHub</a>
+</div>
+</section>
+<footer>© Shagun Sharma</footer>
+</div>
+
+<script>
+(function(){
+var svg=document.getElementById('plot'),ns='http://www.w3.org/2000/svg',s=7;
+function r(){s=(s*9301+49297)%233280;return s/233280}
+function add(tag,a){var e=document.createElementNS(ns,tag);for(var k in a)e.setAttribute(k,a[k]);svg.appendChild(e);return e}
+add('line',{x1:60,y1:380,x2:340,y2:20,stroke:'var(--line)','stroke-width':3,'stroke-dasharray':'8 8'});
+for(var i=0;i<70;i++){
+var a=r()*Math.PI*2,d=Math.sqrt(r())*95,pcos=i%2===0,
+cx=pcos?270:130,cy=pcos?130:270;
+add('circle',{cx:cx+Math.cos(a)*d,cy:cy+Math.sin(a)*d*1.1,r:5+r()*5,fill:pcos?'var(--rose)':'var(--teal)',opacity:.85});
+}
+})();
+</script>
+</body>
+</html>
